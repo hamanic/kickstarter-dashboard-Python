@@ -1,13 +1,12 @@
-# Projet Python
+# Dashboard Python Dash/Plotly
 
-Projet Python - Dashboard  
-Dataset regroupant tous les projets de la plateforme de financement participatif Kickstarter depuis 2009  
-378661 projets avec chacun 15 variables tel que le pays, le nom du projet, le montant demandé, le montant récolté, etc.  
+Dataset gathering all the projects from Kickstarter cowdfunding platform since 2009  
+378661 projects, each with 15 variables such as country, project name, amount requested, amount raised, etc.   
 
 
-## Installation des packages Python
-
-Déjà tout dans le fichier .py mais au cas où :  
+## Packages installation
+ 
+Everything is in the notebook but here's all the packages needed :  
 
 import numpy as np  
 import pandas as pd  
@@ -24,26 +23,24 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']  
 
 
-## Le script
+## Script
 
-Ouvrir une invite de commande et se placer dans le dossier du projet.
-Executer kickstarter_dash.py à partir de cette invite de commande : python kickstarter_dash.py.  
-Attendre que le fichier csv soit téléchargé et que le dashboard soit construit.  
-Quand l'invite de commande affichera :  
+Description of the required operations to run the dashboard.
+
+Open a command prompt and move to the project folder.
+Run kickstarter_dash.py from this command prompt: python kickstarter_dash.py.  
+Wait until the csv file is downloaded and the dashboard is built.  
+When the command prompt displays:  
 
 
 * Restarting with stat  
 * Debugger is active!  
-* Debugger PIN: 627-896-911  
+* Debug PIN: 627-896-911  
 * Running on http://127.0.0.1:8050/ (Press CTRL+C to quit) 
 
  
-Le dashboard est prêt. Copier l'addresse IP qui s'affiche et entrer la dans un navigateur.  
-Ne pas fermer l'invite de commande pendant l'utilisation du dashboard.  
+The dashboard is ready. Copy the IP address that appears and enter it in a browser.  
+Do not close the command prompt while using the dashboard.  
   
-S'il y a besoin de recharger le csv, décommenter la ligne "#ksprojects=pd.read_csv("ks-projects-201801.csv",encoding = 'utf8')".  
-Cela permet de charger directement le csv localement (ce qui va beaucoup plus vite).
-
-
-
-# kickstarter-dashboard-Python
+If there is a need to reload the csv, uncomment the line "#ksprojects=pd.read_csv("ks-projects-201801.csv",encoding = "utf8')".  
+This allows the csv to be loaded locally (which goes much faster).
